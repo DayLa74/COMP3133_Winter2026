@@ -1,0 +1,15 @@
+{
+    "name": "lab05-graphql",
+    "version": "1.0.0",
+    "description": "COMP 3133 - Lab 05 GraphQL Movie API",
+    "main": "index.js",
+    "type": "commonjs",
+    "scripts": {
+    "start": "node index.js"
+    },
+    "dependencies": {
+    "@apollo/server": "^4.0.0",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6"
+    }
+}
