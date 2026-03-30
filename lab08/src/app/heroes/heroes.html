@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>🦸 Hero Dashboard</h1>
+
+  <ul class="hero-list">
+    <li *ngFor="let hero of heroes"
+        (click)="onSelect(hero)"
+        [class.selected]="hero === selectedHero">
+      {{ hero.name | removeSpaces }}
+    </li>
+  </ul>
+
+  <div class="details">
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+  </div>
+
+  <div class="input-box">
+    <input type="text" inputFormat placeholder="Type something...">
+  </div>
+</div>
